@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <ul class="list-group">
+    {% for user in object_list  %}
+        <li>
+            <h3>{{ user.created_date }}</h3>
+            <p>{{ user.email }}</p>
+            <button type="submit" value="{{ user.username }}">{{ user.username }}</button>
+        </li>
+    {% endfor %}
+</ul>
+</body>
+</html>
